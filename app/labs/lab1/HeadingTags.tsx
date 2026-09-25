@@ -25,21 +25,19 @@ export default function HeadingTags() {
 
             <div id="wd-ai-headings">
                 <h4>Lab notes</h4>
+                <p>This is a placeholder sentence summarizing the lab.</p>
                 <h5>What I built</h5>
+                <p>This is a placeholder sentence describing the work completed.</p>
                 <h6>Next step</h6>
-                <span>
-                    This section demonstrates how headings can organize content into different levels.
-                </span>
+                <p>This is a placeholder sentence describing what comes next.</p>
             </div>
 
 
             <div id="wd-your-heading">
                 <h4>Melanie Lochrie</h4>
-                <span>
-                    I am an Align online student learning web development this Fall 2026
-                    semester. I am excited to dive into the world of{" "}
-                    <span id="wd-your-span">HTML</span>.
-                </span>
+                I am an Align online student learning web development this Fall 2026
+                semester. I am excited to dive into the world of{" "}
+                <span id="wd-your-span">HTML</span>.
             </div>
         </div>
     );
