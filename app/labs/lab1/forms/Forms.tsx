@@ -1,6 +1,7 @@
 import RadioButtons from "./RadioButtons";
 import TextFields from "./TextFields";
 import Textarea from "./Textarea";
+import Checkboxes from "./Checkboxes";
 
 export default function Forms() {
   return (
@@ -11,6 +12,7 @@ export default function Forms() {
         <TextFields />
         <Textarea />
         <RadioButtons />
+        <Checkboxes />
 
         {/* add the next form components here */}
       </form>
