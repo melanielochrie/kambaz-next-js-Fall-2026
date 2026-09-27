@@ -3,6 +3,7 @@ import TextFields from "./TextFields";
 import Textarea from "./Textarea";
 import Checkboxes from "./Checkboxes";
 import Dropdowns from "./Dropdowns";
+import OtherFieldTypes from "./OtherFieldTypes";
 
 export default function Forms() {
     return (
@@ -15,6 +16,7 @@ export default function Forms() {
                 <RadioButtons />
                 <Checkboxes />
                 <Dropdowns />
+                <OtherFieldTypes />
 
                 {/* add the next form components here */}
             </form>
