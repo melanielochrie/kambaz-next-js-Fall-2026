@@ -1,4 +1,5 @@
 import TextFields from "./TextFields";
+import Textarea from "./Textarea";
 
 export default function Forms() {
   return (
@@ -7,6 +8,7 @@ export default function Forms() {
 
       <form id="wd-text-fields">
         <TextFields />
+        <Textarea />
 
         {/* add the next form components here */}
       </form>
