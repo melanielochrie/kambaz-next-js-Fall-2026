@@ -1,3 +1,4 @@
+import RadioButtons from "./RadioButtons";
 import TextFields from "./TextFields";
 import Textarea from "./Textarea";
 
@@ -9,6 +10,7 @@ export default function Forms() {
       <form id="wd-text-fields">
         <TextFields />
         <Textarea />
+        <RadioButtons />
 
         {/* add the next form components here */}
       </form>
