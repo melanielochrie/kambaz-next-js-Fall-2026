@@ -15,6 +15,7 @@ export default function Lab1() {
             <ListTags />
             <Tables />
             <Images />
+            <Forms />
 
 
 
