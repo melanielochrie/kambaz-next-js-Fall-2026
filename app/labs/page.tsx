@@ -11,6 +11,9 @@ export default function Labs() {
                 <li>
                     <Link href="/labs/lab1">Lab 1</Link>
                 </li>
+                <li>
+                    <Link href="/labs/lab5">Lab 5</Link>
+                </li>
             </ul>
 
             <a
