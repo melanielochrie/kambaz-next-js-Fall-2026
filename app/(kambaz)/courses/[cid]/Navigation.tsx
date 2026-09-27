@@ -31,7 +31,7 @@ export default function CourseNavigation({ cid }: { cid: string }) {
                 Grades
             </Link>{" "}
             <br />
-            <Link href={`/courses/${cid}/people/table`} id="wd-course-people-link">
+            <Link href={`/courses/${cid}/people`} id="wd-course-people-link">
                 People
             </Link>{" "}
             <br />
