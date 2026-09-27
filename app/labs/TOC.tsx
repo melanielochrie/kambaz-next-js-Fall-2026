@@ -35,6 +35,7 @@ export default function TOC() {
       </ul>
 
       <p>Melanie's Web Development Labs</p>
+      <p>Creating, learning, and building along the way.</p>
     </div>
   );
 }
