@@ -24,3 +24,4 @@ export default function Lab1() {
             {/* do the next exercise here */}
         </div>
     );
+}
