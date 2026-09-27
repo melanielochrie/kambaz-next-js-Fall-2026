@@ -10,19 +10,19 @@ export default function Dashboard() {
                     id="1234"
                     title="CS1234 React JS"
                     subtitle="Full Stack software developer"
-                    image="/images/reactjs.jpg"
+                    image="/images/reactjs.png"
                 />
                 <CourseCard
                     id="2345"
                     title="CS2345 Node JS"
                     subtitle="Server side JavaScript"
-                    image="/images/nodejs.jpg"
+                    image="/images/nodejs.png"
                 />
                 <CourseCard
                     id="3456"
                     title="CS3456 MongoDB"
                     subtitle="NoSQL Databases"
-                    image="/images/mongodb.jpg"
+                    image="/images/mongodb.png"
                 />
             </div>
         </div>
