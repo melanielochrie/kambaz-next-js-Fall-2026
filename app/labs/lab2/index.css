@@ -70,10 +70,11 @@ p#wd-id-selector-3 {
     color: black;
 }
 
-p {
+/* p {
     background-color: yellow;
     color: black;
 }
+*/
 
 .wd-specificity-class {
     background-color: purple;
@@ -98,4 +99,24 @@ section p {
 
 #wd-ai-cascade {
     background-color: red;
+}
+
+.wd-fg-color-black {
+    color: black;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+#wd-lab2 .wd-fg-color-blue {
+    color: #7070ff;
+}
+
+.wd-fg-color-red {
+    color: #ff7070;
+}
+
+.wd-fg-color-green {
+    color: green;
 }
