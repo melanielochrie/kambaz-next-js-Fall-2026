@@ -3,6 +3,8 @@ import ForegroundColors from "./ForegroundColors";
 import BackgroundColors from "./BackgroundColors";
 import Borders from "./Borders";
 import Corners from "./Corners";
+import Display from "./Display";
+import Dimensions from "./Dimensions";
 
 export default function Lab2() {
   return (
@@ -132,6 +134,8 @@ export default function Lab2() {
       <BackgroundColors />
       <Borders />
       <Corners />
+      <Display />
+      <Dimensions />
     </div >
   );
 }
