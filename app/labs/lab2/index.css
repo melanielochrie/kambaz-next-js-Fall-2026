@@ -141,3 +141,31 @@ section p {
 .wd-bg-color-gray {
   background-color: lightgray;
 }
+
+.wd-border-fat {
+  border-width: 20px 30px 20px 30px;
+}
+
+.wd-border-thin {
+  border-width: 4px;
+}
+
+.wd-border-solid {
+  border-style: solid;
+}
+
+.wd-border-dashed {
+  border-style: dashed;
+}
+
+.wd-border-yellow {
+  border-color: yellow;
+}
+
+.wd-border-red {
+  border-color: red;
+}
+
+.wd-border-blue {
+  border-color: blue;
+}
