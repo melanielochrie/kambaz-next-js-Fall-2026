@@ -5,6 +5,9 @@ import Borders from "./Borders";
 import Corners from "./Corners";
 import Display from "./Display";
 import Dimensions from "./Dimensions";
+import Padding from "./Padding";
+import Margins from "./Margins";
+import BoxModel from "./BoxModel";
 
 export default function Lab2() {
   return (
@@ -136,6 +139,9 @@ export default function Lab2() {
       <Corners />
       <Display />
       <Dimensions />
+      <Padding />
+      <Margins />
+      <BoxModel />
     </div >
   );
 }

@@ -354,3 +354,24 @@ section p {
     width: 300px;
     background-color: lightgreen;
 }
+
+.wd-pos-relative-nudge-up-right {
+  position: relative;
+  bottom: 30px;
+  left: 30px;
+}
+.wd-pos-relative-nudge-down-right {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.wd-pos-relative {
+  position: relative;
+}
+
+
+.wd-pos-relative-nudge-down-left {
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
