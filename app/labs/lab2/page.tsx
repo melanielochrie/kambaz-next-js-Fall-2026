@@ -110,6 +110,21 @@ export default function Lab2() {
         </div>
       </div>
 
+      <div id="wd-css-specificity">
+        <h3>CSS Selection Rule Mechanism</h3>
+
+        <p id="wd-specificity-test" className="wd-specificity-class">
+          This paragraph has multiple CSS rules, but only one style will win.
+        </p>
+
+        <section>
+          <p id="wd-ai-cascade" className="wd-ai-cascade">
+            This sample paragraph matches a tag, class, and ID rule that each
+            set a different background color.
+          </p>
+        </section>
+      </div>
+
     </div >
   );
 }

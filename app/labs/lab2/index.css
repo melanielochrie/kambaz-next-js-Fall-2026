@@ -69,3 +69,33 @@ p#wd-id-selector-3 {
     background-color: darkorange;
     color: black;
 }
+
+p {
+    background-color: yellow;
+    color: black;
+}
+
+.wd-specificity-class {
+    background-color: purple;
+    color: turquoise;
+}
+
+
+#wd-specificity-test {
+    background-color: navy;
+    color: white;
+}
+
+/* AI cascade sample: the ID selector (#wd-ai-cascade) should win -> red.
+   ID beats class beats tag, regardless of source order. */
+section p {
+    background-color: green;
+}
+
+.wd-ai-cascade {
+    background-color: yellow;
+}
+
+#wd-ai-cascade {
+    background-color: red;
+}
