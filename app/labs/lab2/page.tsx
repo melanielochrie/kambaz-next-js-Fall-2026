@@ -22,6 +22,31 @@ export default function Lab2() {
         This paragraph has a green background and yellow text.
       </p>
 
-    </div >
+      <div id="wd-css-id-selectors">
+        <h3>ID selectors</h3>
+
+        <p id="wd-id-selector-1">
+          Instead of changing the look and feel of all the
+          elements of the same name, we can refer to a
+          specific element by its ID.
+        </p>
+
+        <p id="wd-id-selector-2">
+          Here's another paragraph using a different ID
+          and a different look and feel.
+        </p>
+
+        <p id="wd-ai-id-selector">
+          This is a sample paragraph styled with its own ID
+          selector, using a teal background and white text.
+        </p>
+
+        <p id="wd-id-selector-3">
+          This is my third paragraph using ID selectors.
+          I chose purple and turquoise for the Arizona Diamondbacks!
+        </p>
+
+      </div >
+    </div>
   );
 }

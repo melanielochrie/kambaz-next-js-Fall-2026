@@ -1,6 +1,26 @@
-p {
+/*p {
     background-color: green;
     color: white;
+} */
+
+p#wd-id-selector-1 {
+    background-color: red;
+    color: white;
+}
+
+p#wd-id-selector-2 {
+    background-color: yellow;
+    color: black;
+}
+
+p#wd-ai-id-selector {
+    background-color: teal;
+    color: white;
+}
+
+p#wd-id-selector-3 {
+    background-color: purple;
+    color: turquoise;
 }
 
 #wd-lab2 h2 {
