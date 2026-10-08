@@ -31,4 +31,21 @@ p#wd-id-selector-3 {
 #wd-lab2 h3 {
     background-color: purple;
     color: turquoise;
+
+}
+
+.wd-class-selector {
+    background-color: purple;
+    color: turquoise;
+}
+
+.wd-ai-class-selector {
+    background-color: darkgreen;
+    color: gold;
+}
+
+
+.wd-my-class {
+  background-color: navy;
+  color: red;
 }

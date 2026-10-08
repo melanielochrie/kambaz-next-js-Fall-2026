@@ -45,8 +45,37 @@ export default function Lab2() {
           This is my third paragraph using ID selectors.
           I chose purple and turquoise for the Arizona Diamondbacks!
         </p>
+      </div>
 
-      </div >
-    </div>
+      <div id="wd-css-class-selectors">
+        <h3>Class selectors</h3>
+
+        <p className="wd-class-selector">
+          Instead of using IDs to refer to elements,
+          we can use the class attribute.
+        </p>
+
+        <h4 className="wd-class-selector">
+          This heading has the same style as the paragraph above.
+        </h4>
+
+        <p className="wd-ai-class-selector">
+          This is a sample paragraph styled with a class selector,
+          using a dark green background and gold text.
+        </p>
+
+        <h4 className="wd-ai-class-selector">
+          This sample heading shares the same class as the paragraph above.
+        </h4>
+
+        <p className="wd-my-class">
+          This paragraph uses my custom CSS class.
+        </p>
+
+        <h4 className="wd-my-class">
+          This heading uses the same custom CSS class.
+        </h4>
+      </div>
+    </div >
   );
 }
