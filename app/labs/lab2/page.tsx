@@ -76,6 +76,40 @@ export default function Lab2() {
           This heading uses the same custom CSS class.
         </h4>
       </div>
+
+      <div id="wd-css-document-structure">
+        <div className="wd-selector-1">
+          <h3>Document structure selectors</h3>
+          <div className="wd-selector-2">
+            Selectors can be combined to refer to elements
+            in particular places in the document.
+
+            <p className="wd-selector-3">
+              This paragraph's red background is referenced
+              as a descendant of an ancestor.
+              <br />
+              .wd-selector-1 .wd-selector-3
+              <br />
+              <span className="wd-selector-4">
+                Whereas this span is a direct child of its parent.
+              </span>
+
+              <span className="wd-selector-5">
+                This is my new element using a child selector.
+              </span>
+
+              <span className="wd-ai-selector-5">
+                This sample span is styled as a descendant of .wd-selector-1.
+              </span>
+
+              <br />
+              You can combine these relationships to create
+              specific styles depending on the document structure.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div >
   );
 }
