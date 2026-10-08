@@ -8,6 +8,7 @@ import Dimensions from "./Dimensions";
 import Padding from "./Padding";
 import Margins from "./Margins";
 import BoxModel from "./BoxModel";
+import Positions from "./Positions";
 
 export default function Lab2() {
   return (
@@ -142,6 +143,7 @@ export default function Lab2() {
       <Padding />
       <Margins />
       <BoxModel />
+      <Positions />
     </div >
   );
 }
