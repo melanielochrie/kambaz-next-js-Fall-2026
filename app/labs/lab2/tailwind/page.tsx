@@ -2,6 +2,7 @@ import "./index.css";
 import TailwindSpacing from "./TailwindSpacing";
 import TailwindTypography from "./TailwindTypography";
 import TailwindBackgroundColors from "./TailwindBackgroundColors";
+import TailwindResponsiveBreakpoint from "./TailwindResponsiveBreakpoint";
 
 export default function TailwindLab() {
     return (
@@ -11,6 +12,7 @@ export default function TailwindLab() {
             <TailwindSpacing />
             <TailwindTypography />
             <TailwindBackgroundColors />
+            <TailwindResponsiveBreakpoint />
         </div>
     );
 }
