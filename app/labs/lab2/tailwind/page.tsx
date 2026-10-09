@@ -9,6 +9,8 @@ import TailwindResponsiveGrid from "./TailwindResponsiveGrid";
 import TailwindResponsiveSpacingText from "./TailwindResponsiveSpacingText";
 import TailwindResponsiveDesign from "./TailwindResponsiveDesign";
 import TailwindFilters from "./TailwindFilter";
+import TailwindGrids from "./TailwindGrids";
+
 
 export default function TailwindLab() {
     return (
@@ -25,6 +27,7 @@ export default function TailwindLab() {
             <TailwindResponsiveSpacingText />
             <TailwindResponsiveDesign />
             <TailwindFilters />
+            <TailwindGrids />
         </div>
     );
 }
