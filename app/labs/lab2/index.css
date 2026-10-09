@@ -543,3 +543,24 @@ img.wd-float-right {
 .wd-grid-col-two-thirds {
     width: 66.67%;
 }
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+.wd-flex-row-container > div {
+  height: 100px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.wd-flex-grow-1 {
+  flex-grow: 1;
+}
+
+
+.wd-width-110px {
+    width: 110px;
+    flex-shrink: 0;
+}
+
