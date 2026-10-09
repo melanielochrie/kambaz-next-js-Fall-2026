@@ -9,6 +9,8 @@ import Padding from "./Padding";
 import Margins from "./Margins";
 import BoxModel from "./BoxModel";
 import Positions from "./Positions";
+import Zindex from "./Zindex";
+import Float from "./Float";
 
 export default function Lab2() {
   return (
@@ -144,6 +146,8 @@ export default function Lab2() {
       <Margins />
       <BoxModel />
       <Positions />
+      <Zindex />
+      <Float />
     </div >
   );
 }
