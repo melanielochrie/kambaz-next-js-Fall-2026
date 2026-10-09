@@ -5,6 +5,7 @@ import TailwindBackgroundColors from "./TailwindBackgroundColors";
 import TailwindResponsiveBreakpoint from "./TailwindResponsiveBreakpoint";
 import TailwindResponsiveShowHide from "./TailwindResponsiveShowHide";
 import TailwindResponsiveFlex from "./TailwindResponsiveFlex";
+import TailwindResponsiveGrid from "./TailwindResponsiveGrid";
 
 export default function TailwindLab() {
     return (
@@ -17,6 +18,7 @@ export default function TailwindLab() {
             <TailwindResponsiveBreakpoint />
             <TailwindResponsiveShowHide />
             <TailwindResponsiveFlex />
+            <TailwindResponsiveGrid />
         </div>
     );
 }
