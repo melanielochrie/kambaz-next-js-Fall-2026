@@ -440,3 +440,21 @@ section p {
     color: white;
     padding: 5px 10px;
 }
+
+.wd-zindex-bring-to-front {
+    z-index: 10;
+}
+
+.wd-ai-zindex-top {
+    z-index: 20;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.wd-zindex-custom {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 20;
+}
