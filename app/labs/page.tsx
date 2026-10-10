@@ -9,10 +9,16 @@ export default function Labs() {
 
             <ul>
                 <li>
+                    <Link href="/account/signin">Kambaz</Link>
+                </li>
+                <li>
                     <Link href="/labs/lab1">Lab 1</Link>
                 </li>
                 <li>
                     <Link href="/labs/lab2">Lab 2</Link>
+                </li>
+                <li>
+                    <Link href="/labs/lab3">Lab 3</Link>
                 </li>
                 <li>
                     <Link href="/labs/lab4" id="wd-lab4-link">
