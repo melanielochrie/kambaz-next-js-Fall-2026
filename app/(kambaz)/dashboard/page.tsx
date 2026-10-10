@@ -5,7 +5,7 @@ export default function Dashboard() {
         <div id="wd-dashboard">
             <h1 id="wd-dashboard-title">Dashboard</h1>
             <hr />
-            <h2 id="wd-dashboard-published">Published Courses (3)</h2>
+            <h2 id="wd-dashboard-published">Published Courses (5)</h2>
             <hr />
             <div
                 id="wd-dashboard-courses"
@@ -15,31 +15,31 @@ export default function Dashboard() {
                     id="1234"
                     title="CS1234 React JS"
                     subtitle="Full Stack software developer"
-                    image="/images/reactjs.jpg"
+                    image="/images/reactjs.png"
                 />
                 <CourseCard
                     id="2345"
                     title="CS2345 Node JS"
                     subtitle="Server side JavaScript"
-                    image="/images/nodejs.jpg"
+                    image="/images/nodejs.png"
                 />
                 <CourseCard
                     id="3456"
                     title="CS3456 MongoDB"
                     subtitle="NoSQL Databases"
-                    image="/images/mongodb.jpg"
+                    image="/images/mongodb.png"
                 />
                 <CourseCard
                     id="5434"
                     title="CS5001 - Python"
                     subtitle="Intro to Programming"
-                    image="/images/reactjs.jpg"
+                    image="/images/reactjs.png"
                 />
                 <CourseCard
                     id="CS9999"
                     title="CS9999 Sample Course"
                     subtitle="Assistant-generated sample — not my course"
-                    image="/images/reactjs.jpg"
+                    image="/images/reactjs.png"
                 />
             </div>
         </div>

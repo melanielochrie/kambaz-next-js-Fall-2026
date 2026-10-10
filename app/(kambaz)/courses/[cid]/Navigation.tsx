@@ -16,13 +16,13 @@ export default function CourseNavigation({ cid }: { cid: string }) {
         { name: "Assignments", path: "assignments", id: "wd-course-assignments-link" },
         { name: "Quizzes", path: "quizzes", id: "wd-course-quizzes-link" },
         { name: "Grades", path: "grades", id: "wd-course-grades-link" },
-        { name: "People", path: "people/table", id: "wd-course-people-link" },
+        { name: "People", path: "people", id: "wd-course-people-link" },
     ];
 
     return (
         <div
             id="wd-courses-navigation"
-            className="wd-list-group wd rounded-none text-lg"
+            className="list-group wd rounded-none text-lg"
         >
             {links.map((link) => {
                 const href = `/courses/${cid}/${link.path}`;

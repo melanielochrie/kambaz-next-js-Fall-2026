@@ -69,6 +69,11 @@ export default function CourseStatus() {
                 View Course Notifications
             </button>
 
+            <button type="button" className={buttonStyle}>
+                <FaFileImport />
+                View Course Resources
+            </button>
+
             <button id="wd-ai-status" type="button" className={buttonStyle}>
                 <FaMagic />
                 Sample action

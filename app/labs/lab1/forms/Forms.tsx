@@ -27,9 +27,9 @@ export default function Forms() {
                 <Dropdowns />
                 <OtherFieldTypes />
                 <Buttons />
-                <YourForm />
-
             </form>
+
+            <YourForm />
         </div>
     );
 }
