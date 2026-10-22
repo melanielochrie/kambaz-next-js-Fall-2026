@@ -20,7 +20,8 @@ import FindIndex from "./FindIndex";
 import FilterFunction from "./FilterFunction";
 import IncludesSomeEvery from "./IncludesSomeEvery";
 import ReduceFunction from "./ReduceFunction";
-import { RedirectType } from "next/navigation";
+import JsonStringify from "./JsonStringify";
+import House from "./House";
 
 export default function Lab3() {
   return (
@@ -48,6 +49,8 @@ export default function Lab3() {
       <FilterFunction />
       <IncludesSomeEvery />
       <ReduceFunction />
+      <JsonStringify />
+      <House />
     </div>
   );
 }
