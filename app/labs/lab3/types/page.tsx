@@ -1,4 +1,4 @@
-import TypeAnnotations from "./TypeAnnotations";
+import TypeAnnotations from "./TypeAnnotations"
 import ObjectTypes from "./ObjectTypes";
 import Interfaces from "./Interfaces";
 import UnionTypes from "./UnionTypes";
