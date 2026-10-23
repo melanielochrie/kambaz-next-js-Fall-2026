@@ -31,6 +31,7 @@ import Classes from "./Classes";
 import Styles from "./Styles";
 import ClientComponentDemo from "./ClientComponentDemo";
 import ServerComponentDemo from "./ServerComponentDemo";
+import Add from "./Add";
 
 export default function Lab3() {
   console.log("Hello World!");
@@ -70,6 +71,9 @@ export default function Lab3() {
       <Styles />
       <ClientComponentDemo />
       <ServerComponentDemo />
+      <Add a={3} b={4} />
+      <Add a={10} b={20} />
+      <Add a={7} b={8} />
     </div>
   );
 }
