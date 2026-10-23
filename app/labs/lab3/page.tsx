@@ -34,6 +34,7 @@ import ServerComponentDemo from "./ServerComponentDemo";
 import Add from "./Add";
 import Square from "./Square";
 import Highlight from "./Highlight";
+import PathParameters from "./PathParameters";
 
 export default function Lab3() {
   console.log("Hello World!");
@@ -83,7 +84,10 @@ export default function Lab3() {
       <h4>Square of 9</h4>
       <Square>9</Square>
       <hr />
-      <Highlight>I'm loving Web Development so far.</Highlight>
+      <Highlight>
+        I'm loving Web Development so far.
+      </Highlight>
+      <PathParameters />
     </div>
   );
 }
