@@ -20,7 +20,7 @@ export default function ServerComponentDemo() {
             <p>Rendered on server at: {serverRenderTime}</p>
             <h2>Server Information</h2>
             <pre>
-                {JSON.stringify({ platform, nodeVersion, serverRenderTime }, null, 2)}
+                {JSON.stringify({ platform, nodeVersion, serverRenderTime, pid: process.pid, arch: process.arch }, null, 2)}
             </pre>
             <h2>Filesystem Access Demo</h2>
             <pre>{JSON.stringify(files, null, 2)}</pre>
