@@ -5,26 +5,27 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "../../kambaz.css";
 
-export default function CourseNavigation({ cid }: { cid: string }) {
-    const pathname = usePathname();
+const LINKS = [
+    { name: "Home", path: "home", id: "wd-course-home-link" },
+    { name: "Modules", path: "modules", id: "wd-course-modules-link" },
+    { name: "Piazza", path: "piazza", id: "wd-course-piazza-link" },
+    { name: "Zoom", path: "zoom", id: "wd-course-zoom-link" },
+    { name: "Assignments", path: "assignments", id: "wd-course-assignments-link" },
+    { name: "Quizzes", path: "quizzes", id: "wd-course-quizzes-link" },
+    { name: "Grades", path: "grades", id: "wd-course-grades-link" },
+    { name: "People", path: "people/table", id: "wd-course-people-link" },
+    { name: "Announcements", path: "announcements", id: "wd-course-announcements-link" },
+] as const;
 
-    const links = [
-        { name: "Home", path: "home", id: "wd-course-home-link" },
-        { name: "Modules", path: "modules", id: "wd-course-modules-link" },
-        { name: "Piazza", path: "piazza", id: "wd-course-piazza-link" },
-        { name: "Zoom", path: "zoom", id: "wd-course-zoom-link" },
-        { name: "Assignments", path: "assignments", id: "wd-course-assignments-link" },
-        { name: "Quizzes", path: "quizzes", id: "wd-course-quizzes-link" },
-        { name: "Grades", path: "grades", id: "wd-course-grades-link" },
-        { name: "People", path: "people", id: "wd-course-people-link" },
-    ];
+export default function CourseNavigation({ cid }: { cid: string }) {
+    const pathname = usePathname() ?? "";
 
     return (
         <div
             id="wd-courses-navigation"
             className="list-group wd rounded-none text-lg"
         >
-            {links.map((link) => {
+            {LINKS.map((link) => {
                 const href = `/courses/${cid}/${link.path}`;
                 const active =
                     pathname === href || pathname.startsWith(href + "/");
