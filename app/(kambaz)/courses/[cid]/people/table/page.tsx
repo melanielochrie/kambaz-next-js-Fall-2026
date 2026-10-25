@@ -1,6 +1,19 @@
 import { FaUserCircle } from "react-icons/fa";
+import * as db from "../../../../database";
 
-export default function PeopleTable() {
+export default async function PeopleTable({
+    params,
+}: {
+    params: Promise<{ cid: string }>;
+}) {
+    const { cid } = await params;
+    const { users, enrollments } = db;
+    const enrolled = users.filter((usr) =>
+        enrollments.some(
+            (enrollment) => enrollment.user === usr._id && enrollment.course === cid,
+        ),
+    );
+
     return (
         <div id="wd-people-table" className="overflow-x-auto">
             <table className="w-full border-collapse text-left text-sm">
