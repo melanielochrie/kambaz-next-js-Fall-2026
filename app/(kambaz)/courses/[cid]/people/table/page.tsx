@@ -28,120 +28,19 @@ export default async function PeopleTable({
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Tony Stark
-                        </td>
-                        <td className="p-2">001234561S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-10-01</td>
-                        <td className="p-2">10:21:32</td>
-                    </tr>
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Bruce Wayne
-                        </td>
-                        <td className="p-2">001234562S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-11-02</td>
-                        <td className="p-2">23:32:23</td>
-                    </tr>
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Steve Rogers
-                        </td>
-                        <td className="p-2">001234563S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-10-02</td>
-                        <td className="p-2">13:21:32</td>
-                    </tr>
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Natasha Romanoff
-                        </td>
-                        <td className="p-2">001234564S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">TA</td>
-                        <td className="p-2">2020-11-05</td>
-                        <td className="p-2">11:22:33</td>
-                    </tr>
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Jane Sample
-                        </td>
-                        <td className="p-2">001234568S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-11-09</td>
-                        <td className="p-2">08:15:42</td>
-                    </tr>
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Alex Sample
-                        </td>
-                        <td className="p-2">001234569S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-11-10</td>
-                        <td className="p-2">16:05:27</td>
-                    </tr>
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Sam Sample
-                        </td>
-                        <td className="p-2">001234570S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">TA</td>
-                        <td className="p-2">2020-11-11</td>
-                        <td className="p-2">10:48:03</td>
-                    </tr>
-
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Peter Parker
-                        </td>
-                        <td className="p-2">001234565S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-11-06</td>
-                        <td className="p-2">12:30:15</td>
-                    </tr>
-
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Wanda Maximoff
-                        </td>
-                        <td className="p-2">001234566S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-11-07</td>
-                        <td className="p-2">09:45:20</td>
-                    </tr>
-
-                    <tr className="odd:bg-neutral-50">
-                        <td className="p-2 text-nowrap">
-                            <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
-                            Thor Odinson
-                        </td>
-                        <td className="p-2">001234567S</td>
-                        <td className="p-2">S101</td>
-                        <td className="p-2">STUDENT</td>
-                        <td className="p-2">2020-11-08</td>
-                        <td className="p-2">14:20:10</td>
-                    </tr>
-
+                    {enrolled.map((usr) => (
+                        <tr key={usr._id} className="odd:bg-neutral-50">
+                            <td className="p-2 text-nowrap">
+                                <FaUserCircle className="me-2 inline text-4xl text-neutral-500" />
+                                {usr.firstName} {usr.lastName}
+                            </td>
+                            <td className="p-2">{usr.loginId}</td>
+                            <td className="p-2">{usr.section}</td>
+                            <td className="p-2">{usr.role}</td>
+                            <td className="p-2">{usr.lastActivity}</td>
+                            <td className="p-2">{usr.totalActivity}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
