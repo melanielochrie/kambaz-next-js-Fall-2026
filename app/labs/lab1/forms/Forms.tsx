@@ -14,7 +14,7 @@ export default function Forms() {
         <div id="wd-forms">
             <h4>Form Elements</h4>
 
-            <form
+            <div
                 id="wd-text-fields"
                 onSubmit={(event) => {
                     event.preventDefault();
@@ -29,7 +29,7 @@ export default function Forms() {
                 <Buttons />
                 <YourForm />
 
-            </form>
+            </div>
         </div>
     );
 }
