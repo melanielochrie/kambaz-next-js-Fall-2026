@@ -12,6 +12,7 @@ import DateStateVariable from "./DateStateVariable";
 import ObjectStateVariable from "./ObjectStateVariable";
 import ArrayStateVariable from "./ArrayStateVariable";
 import ProfileForm from "./profile/ProfileForm";
+import ParentStateComponent from "./ParentStateComponent";
 
 export default function Lab4() {
     const sayHello = (message: string) => {
@@ -46,6 +47,7 @@ export default function Lab4() {
             <ObjectStateVariable />
             <ArrayStateVariable />
             <ProfileForm />
+            <ParentStateComponent />
         </div>
     );
 }
