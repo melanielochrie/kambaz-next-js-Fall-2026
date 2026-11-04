@@ -13,6 +13,7 @@ import ObjectStateVariable from "./ObjectStateVariable";
 import ArrayStateVariable from "./ArrayStateVariable";
 import ProfileForm from "./profile/ProfileForm";
 import ParentStateComponent from "./ParentStateComponent";
+import PropDrilling from "./PropDrilling";
 
 export default function Lab4() {
     const sayHello = (message: string) => {
@@ -48,6 +49,7 @@ export default function Lab4() {
             <ArrayStateVariable />
             <ProfileForm />
             <ParentStateComponent />
+            <PropDrilling />
         </div>
     );
 }
