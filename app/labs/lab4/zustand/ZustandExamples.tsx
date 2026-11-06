@@ -2,6 +2,7 @@
 
 import ZustandCounter from "./ZustandCounter";
 import ZustandTodoList from "./ZustandTodoList";
+import ZustandProfileForm from "./ZustandProfileForm";
 
 export default function ZustandExamples() {
     return (
@@ -9,6 +10,7 @@ export default function ZustandExamples() {
             <h2>Zustand</h2>
             <ZustandCounter />
             <ZustandTodoList />
+            <ZustandProfileForm />
             <hr />
         </div>
     );
