@@ -28,7 +28,6 @@ export default function Forms() {
                 <OtherFieldTypes />
                 <Buttons />
                 <YourForm />
-
             </div>
         </div>
     );

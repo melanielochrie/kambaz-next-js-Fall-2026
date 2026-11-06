@@ -9,6 +9,9 @@ export default function Labs() {
 
             <ul>
                 <li>
+                    <Link href="/account/signin">Kambaz</Link>
+                </li>
+                <li>
                     <Link href="/labs/lab1">Lab 1</Link>
                 </li>
                 <li>

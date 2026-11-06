@@ -1,0 +1,80 @@
+[
+  {
+    "_id": "RS101",
+    "name": "Rocket Propulsion",
+    "number": "RS4550",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "term": "Spring 2023",
+    "department": "D123",
+    "credits": 4,
+    "description": "This course provides an in-depth study of the fundamentals of rocket propulsion, including thermodynamics of the combustion chamber and nozzle. Students analyze solid, liquid, and hybrid rocket motors and apply propulsion theory to engine performance.",
+    "image": "/images/reactjs.jpg"
+  },
+  {
+    "_id": "RS102",
+    "name": "Aerodynamics",
+    "number": "RS4560",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "term": "Spring 2023",
+    "department": "D123",
+    "credits": 3,
+    "description": "This course explores the principles of aerodynamics and how airflow interacts with wings, airfoils, and other flying bodies. Students study lift, drag, compressible flow, and the aerodynamic considerations used in aircraft and spacecraft design.",
+    "image": "/images/nodejs.jpg"
+  },
+  {
+    "_id": "RS103",
+    "name": "Spacecraft Design",
+    "number": "RS4570",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "term": "Spring 2023",
+    "department": "D123",
+    "credits": 4,
+    "description": "This course covers the principles of spacecraft design, including structures, propulsion, thermal control, and power systems. Students apply systems engineering methods to mission design, orbital mechanics, and payload integration for current and future space missions.",
+    "image": "/images/mongodb.jpg"
+  },
+  {
+    "_id": "1234",
+    "name": "CS1234 React JS",
+    "description": "Full Stack software developer",
+    "image": "/images/reactjs.png"
+  },
+  {
+    "_id": "2345",
+    "name": "CS2345 Node JS",
+    "description": "Server side JavaScript",
+    "image": "/images/nodejs.png"
+  },
+  {
+    "_id": "3456",
+    "name": "CS3456 MongoDB",
+    "description": "NoSQL Databases",
+    "image": "/images/mongodb.png"
+  },
+  {
+    "_id": "5434",
+    "name": "CS5001 - Introduction to Python",
+    "description": "Intro to Programming",
+    "image": "/images/reactjs.png"
+  },
+  {
+    "_id": "CS9999",
+    "name": "CS9999 Sample Course",
+    "description": "Sample course created to practice web development and test the Kambaz Dashboard.",
+    "image": "/images/reactjs.png"
+  },
+  {
+    "_id": "RS104",
+    "name": "Organic Chemistry",
+    "number": "RS4580",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "term": "Spring 2023",
+    "department": "D123",
+    "credits": 4,
+    "description": "This course introduces the structure, properties, and reactions of carbon-based compounds. Students study functional groups, reaction mechanisms, and stereochemistry, with applications to propellant chemistry and materials used in aerospace systems.",
+    "image": "/images/reactjs.jpg"
+  }
+]
