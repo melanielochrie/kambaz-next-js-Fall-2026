@@ -1,71 +1,54 @@
+"use client";
 
+import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useAccountContext } from "../AccountContext";
 
 export default function Signup() {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const { setCurrentUser } = useAccountContext();
+    const router = useRouter();
+
+    const signup = () => {
+        if (!username || !password) return;
+        setCurrentUser({
+            _id: crypto.randomUUID(),
+            username,
+            password,
+            firstName: "",
+            lastName: "",
+            email: "",
+            role: "STUDENT",
+            loginId: "",
+            section: "",
+            lastActivity: "",
+            totalActivity: "",
+        });
+        router.push("/account/profile");
+    };
+
     return (
-        <div id="wd-signup-screen" className="max-w-sm">
-            <h1 className="mb-4 text-2xl font-semibold">
+        <div id="wd-signup-screen">
+            <h3>Sign up</h3>
+            <input
+                id="wd-username"
+                placeholder="username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+                id="wd-password"
+                placeholder="password"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+            />
+            <button type="button" onClick={signup} id="wd-signup-btn">
                 Sign up
-            </h1>
-
-            <div className="mb-4">
-                <label
-                    htmlFor="wd-signup-username"
-                    className="mb-2 block font-semibold"
-                >
-                    Username
-                </label>
-                <input
-                    id="wd-signup-username"
-                    placeholder="username"
-                    defaultValue="ada"
-                    className="wd-username w-full rounded border border-neutral-300 px-3 py-2"
-                />
-            </div>
-
-            <div className="mb-4">
-                <label
-                    htmlFor="wd-signup-password"
-                    className="mb-2 block font-semibold"
-                >
-                    Password
-                </label>
-                <input
-                    id="wd-signup-password"
-                    placeholder="password"
-                    type="password"
-                    defaultValue="123"
-                    className="wd-password w-full rounded border border-neutral-300 px-3 py-2"
-                />
-            </div>
-
-            <div className="mb-4">
-                <label
-                    htmlFor="wd-signup-verify"
-                    className="mb-2 block font-semibold"
-                >
-                    Verify Password
-                </label>
-                <input
-                    id="wd-signup-verify"
-                    placeholder="verify password"
-                    type="password"
-                    className="wd-password-verify w-full rounded border border-neutral-300 px-3 py-2"
-                />
-            </div>
-
-            <Link
-                href="/account/profile"
-                id="wd-signup-btn"
-                className="mb-3 block w-full rounded bg-blue-600 px-3 py-2 text-center text-white no-underline"
-            >
-                Sign up
-            </Link>
-
-            <Link
-                href="/account/signin"
-                className="text-blue-600 hover:underline"
-            >
+            </button>{" "}
+            <Link href="/account/signin" id="wd-signin-link">
                 Sign in
             </Link>
         </div>

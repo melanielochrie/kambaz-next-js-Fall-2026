@@ -1,17 +1,24 @@
+"use client";
+
+import { use } from "react";
 import { FaPlus, FaSearch } from "react-icons/fa";
 import AssignmentItem from "./AssignmentItem";
-import * as db from "../../../database";
+import { useAssignmentsStore } from "../../../store/assignmentsStore";
 
-export default async function Assignments({
+export default function Assignments({
     params,
 }: {
     params: Promise<{ cid: string }>;
 }) {
-    const { cid } = await params;
-    const assignments = db.assignments.filter(
-        (assignment) => assignment.course === cid,
+    const { cid } = use(params);
+
+    const allAssignments = useAssignmentsStore(
+        (state) => state.assignments
     );
 
+    const assignments = allAssignments.filter(
+        (assignment) => assignment.course === cid
+    );
     return (
         <div id="wd-assignments">
             <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
